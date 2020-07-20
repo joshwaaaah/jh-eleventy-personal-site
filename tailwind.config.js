@@ -29,6 +29,9 @@ module.exports = {
       }),
     },
   },
-  variants: {},
+  variants: {
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    margin: ['responsive', 'group-hover', 'focus'],
+  },
   plugins: [],
 };

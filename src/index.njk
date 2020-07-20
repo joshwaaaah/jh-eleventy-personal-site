@@ -21,12 +21,12 @@ description: An Eleventy starter with modern tooling, Tailwind CSS and PurgeCSS
             {% for post in collections.post.slice(0, 2) %}
             <article class="mb-10">
                 <time class="text-sm mb-4 text-grey-light">20th July, 2020</time>
-                <h3 class="text-xl md:text-2xl mb-4">
-                    <a href="{{ post.url | url }}" class="flex items-center">
+                <h3 class="text-xl md:text-2xl mb-4 | duration-200 hover:text-pink">
+                    <a href="{{ post.url | url }}" class="flex items-center | group">
                         {{ post.data.title }}
 
-                        <svg class="w-4 h-4 ml-4" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10H0V8.00001H14.5858L8.29289 1.70712L9.70711 0.292908L18.4142 9.00001L9.70711 17.7071L8.29289 16.2929L14.5858 10Z" fill="white"/>
+                        <svg class="w-4 h-4 ml-4 | duration-200 delay-100 group-hover:text-pink group-hover:ml-6 group-hover:text-pink" viewBox="0 0 19 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10H0V8.00001H14.5858L8.29289 1.70712L9.70711 0.292908L18.4142 9.00001L9.70711 17.7071L8.29289 16.2929L14.5858 10Z" fill="currentColor"/>
                         </svg>
                     </a>
                 </h3>
