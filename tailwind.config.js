@@ -3,6 +3,58 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: ['./src/**/*.njk', './src/**/*.md'],
   theme: {
+    typography: {
+      default: {
+        css: {
+          color: '#ffffff',
+          h1: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          h2: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          h3: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          h4: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          h5: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          h6: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+          },
+          blockquote: {
+            color: '#ffffff',
+            fontWeight: 'normal',
+            borderLeftColor: '#ffffff',
+          },
+          'ul > li::before': {
+            color: '#ffffff',
+          },
+          'ol > li::before': {
+            color: '#ffffff',
+          },
+          strong: {
+            color: '#ffffff',
+          },
+
+          a: {
+            color: '#ffffff',
+            '&:hover': {
+              color: '#ffffff',
+            },
+          },
+        },
+      },
+    },
     container: {
       center: true,
       padding: {
@@ -33,5 +85,7 @@ module.exports = {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
     margin: ['responsive', 'group-hover', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

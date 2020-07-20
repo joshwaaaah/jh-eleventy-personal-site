@@ -45,6 +45,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "acorn": "^6.4.1",
     "node-sass": "^4.14.1"
   }

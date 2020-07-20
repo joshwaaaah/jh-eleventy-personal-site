@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="py-24">
+  <div class="container | max-w-2xl lg:max-w-3xl mx-auto">
+    <h1 class="font-avenir-roman text-3xl leading-normal max-w-lg mb-4 md:text-4xl  lg:max-w-2xl lg:text-6xl lg:leading-tight">
+    {{ title -}}
+    <span class="text-pink">.</span>
+    </h1>
+
+    <p class="font-avenir-light mb-12 md:text-lg lg:text-xl md:mb-12">
+      {{ excerpt }}
+    </p>
+
+    <div class="prose">
+      {{ content | safe }}
+    </div>
+  </div>
+</section>

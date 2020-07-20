@@ -11,10 +11,10 @@
 
   <title>{{ renderData.title or title or metadata.title }}</title>
 
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
 </head>
 
-<body class="bg-grey font-avenir-light text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
+<body class="bg-grey leading-normal font-nunito text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
   {% include "layouts/header.njk" %}
 
   <main>
