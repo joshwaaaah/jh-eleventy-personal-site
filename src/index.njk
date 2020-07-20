@@ -17,11 +17,13 @@ description: An Eleventy starter with modern tooling, Tailwind CSS and PurgeCSS
         <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">Latest Articles<span class="text-pink">.</span></h2>
 
         <div class="grid md:grid-cols-2 md:gap-12 lg:gap-24">
+
+            {% for post in collections.post.slice(0, 2) %}
             <article class="mb-10">
                 <time class="text-sm mb-4 text-grey-light">20th July, 2020</time>
                 <h3 class="text-xl md:text-2xl mb-4">
-                    <a href="#" class="flex items-center">
-                        The State of CSS Variables
+                    <a href="{{ post.url | url }}" class="flex items-center">
+                        {{ post.data.title }}
 
                         <svg class="w-4 h-4 ml-4" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10H0V8.00001H14.5858L8.29289 1.70712L9.70711 0.292908L18.4142 9.00001L9.70711 17.7071L8.29289 16.2929L14.5858 10Z" fill="white"/>
@@ -29,25 +31,10 @@ description: An Eleventy starter with modern tooling, Tailwind CSS and PurgeCSS
                     </a>
                 </h3>
                 <p class="leading-normal">
-                    Aligning on your most important business goal matters most to us. Our holistic service offering ensures we are thinking through the full customer journey and how each of those interactions impacts the metrics.
+                    {{ post.data.excerpt }}
                 </p>
             </article>
-
-            <article class="mb-10">
-                <time class="text-sm mb-4 text-grey-light">20th July, 2020</time>
-                <h3 class="text-xl md:text-2xl mb-4">
-                    <a href="#" class="flex items-center">
-                        The State of CSS Variables
-
-                        <svg class="w-4 h-4 ml-4" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10H0V8.00001H14.5858L8.29289 1.70712L9.70711 0.292908L18.4142 9.00001L9.70711 17.7071L8.29289 16.2929L14.5858 10Z" fill="white"/>
-                        </svg>
-                    </a>
-                </h3>
-                <p class="leading-normal">
-                    Aligning on your most important business goal matters most to us. Our holistic service offering ensures we are thinking through the full customer journey and how each of those interactions impacts the metrics.
-                </p>
-            </article>
+            {% endfor %}
         </div>
     </div>
 </section>
