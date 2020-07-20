@@ -1,0 +1,8 @@
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Site Components
+@import 'base/a11y.scss';
+@import 'base/typography.scss';

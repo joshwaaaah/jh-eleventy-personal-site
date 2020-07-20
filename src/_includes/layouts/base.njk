@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'has-js ';
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+  <meta name="generator" content="Eleventy">
+
+  <title>{{ renderData.title or title or metadata.title }}</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="bg-grey font-avenir-light text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
+  <header class="pt-6 border-t-4 border-pink border-solid md:pt-12">
+    <div class="container | text-right">
+      <nav class="inline-flex font-avenir-roman">
+        <a class="mr-6 md:mr-10" href="#">
+          Home
+        </a>
+        <a class="mr-6 md:mr-10" href="#">
+          Work
+        </a>
+        <a class="mr-6 md:mr-10" href="#">
+          Writing
+        </a>
+        <a href="#">
+          Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="py-10 border-t border-pink border-solid">
+    <div class="container | md:flex">
+      <div class="mb-4 md:mb-0 md:mr-12 lg:mr-24">
+        <p class="mb-2 font-avenir-roman">2020 - 2021</p>
+        <p>Joshua Hartshorne</p>
+      </div>
+      <div class="mb-4 md:mb-0 md:mr-12 lg:mr-24">
+        <p class="mb-2 font-avenir-roman">Contact</p>
+        <a href="">hello@jhartshorne.co.uk</a>
+      </div>
+      <div>
+        <p class="mb-2 font-avenir-roman">Find me elsewhere</p>
+        <a href="#">Twitter</a>
+        <span>/</span>
+        <a href="#">Github</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
