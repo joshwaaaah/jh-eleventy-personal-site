@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
 </head>
 
-<body class="bg-grey leading-normal font-nunito text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
-  {% include "layouts/header.njk" %}
+<body class="bg-grey leading-normal font-avenir-light text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
+  {% include "partials/header.njk" %}
 
   <main>
     {{ content | safe }}
   </main>
 
-  {% include "layouts/footer.njk" %}
+  {% include "partials/footer.njk" %}
 
   <script src="scripts/index.js"></script>
 </body>
