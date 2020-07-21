@@ -1,0 +1,14 @@
+.c-underline {
+  @apply inline;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100% 10px;
+
+  &--primary {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, theme('colors.pink'), theme('colors.transparent'));
+  }
+
+  &--secondary {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, theme('colors.green'), theme('colors.transparent'));
+  }
+}
