@@ -12,11 +12,12 @@
     "styles:dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
     "scripts:prod": "webpack --mode=production",
     "scripts:dev": "webpack --mode=development",
+    "favicons:copy": "cpy src/favicons dist/favicons",
     "fonts:copy": "cpy src/fonts dist/fonts",
     "serve": "light-server -c .lightserverrc",
-    "dev": "cross-env NODE_ENV=development npm-run-all clean styles:dev scripts:dev fonts:copy eleventy:default --parallel eleventy:watch serve --print-label",
+    "dev": "cross-env NODE_ENV=development npm-run-all clean styles:dev scripts:dev fonts:copy favicons:copy eleventy:default --parallel eleventy:watch serve --print-label",
     "dev:debug": "DEBUG=* npm run dev",
-    "build": "cross-env NODE_ENV=production run-s clean scripts:prod eleventy:default styles:prod fonts:copy --print-label"
+    "build": "cross-env NODE_ENV=production run-s clean scripts:prod eleventy:default styles:prod fonts:copy favicons:copy --print-label"
   },
   "repository": {
     "type": "git",
