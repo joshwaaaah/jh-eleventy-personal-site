@@ -1,5 +1,8 @@
 *:focus {
   outline: none;
   border: none;
-  @apply shadow-focus;
+
+  .is-tabbing & {
+    @apply shadow-focus;
+  }
 }

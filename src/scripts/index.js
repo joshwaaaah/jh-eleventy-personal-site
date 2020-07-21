@@ -1,1 +1,1 @@
-console.log('Simple JS, mate');
+import './modules/a11y.js';
