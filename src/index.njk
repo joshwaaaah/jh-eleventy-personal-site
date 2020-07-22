@@ -19,10 +19,9 @@ description: Personal site of Joshua Hartshorne, a front-end developer from Leed
         <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">Latest Articles<span class="text-pink">.</span></h2>
 
         <div class="grid md:grid-cols-2 md:gap-12 lg:gap-24">
-
             {% for post in collections.post.slice(0, 2) %}
             <article class="mb-10">
-                <time class="text-sm mb-4 text-grey-light">20th July, 2020</time>
+                <time class="text-sm mb-4 text-grey-light">{{ post.date.toDateString() }}</time>
                 <h3 class="text-xl md:text-2xl mb-4 | duration-200 hover:text-pink">
                     <a href="{{ post.url | url }}" class="flex items-center | group">
                         {{ post.data.title }}
