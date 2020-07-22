@@ -9,26 +9,32 @@ module.exports = {
           color: '#ffffff',
           h1: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           h2: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           h3: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           h4: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           h5: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           h6: {
             color: theme('colors.pink'),
+            fontFamily: `${theme('fontFamily.avenir-roman')}`,
             fontWeight: 'normal',
           },
           blockquote: {
