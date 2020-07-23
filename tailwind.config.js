@@ -51,11 +51,10 @@ module.exports = {
           strong: {
             color: '#ffffff',
           },
-
           a: {
-            color: '#ffffff',
+            color: theme('colors.pink'),
             '&:hover': {
-              color: '#ffffff',
+              color: theme('colors.pink'),
             },
           },
         },

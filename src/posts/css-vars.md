@@ -5,7 +5,7 @@ excerpt: CSS variables on your most important business goal matters most to us. 
 ## An introduction to CSS variables
 
 Lorem markdownum aperite quanto tura exul arcitenens flecti, voce illo! Posuit
-Perseidos habes, ira sermone famaque. Quoque secum numina, te Astypaleia
+Perseidos [I'm an inline-style link](https://www.google.com) habes, ira sermone famaque. Quoque secum numina, te Astypaleia
 insignia ferus imitatus insibilat concolor. Iacentem saxumque necopina omnia,
 *alto deus thyrso* inhibente ait dextra! Deae velocibus deformes talibus Dryope
 functus sustulit vacant rogandos *illic*: dente ipse, nec erit, sponte.
