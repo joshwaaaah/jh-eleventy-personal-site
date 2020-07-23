@@ -1,0 +1,19 @@
+
+{% if paginationNextUrl or paginationPrevUrl %}
+  <ul>
+    {% if paginationPrevUrl %}
+      <a href="{{ paginationPrevUrl }}">
+        <span>
+          {{ paginationPrevText if paginationPrevText else 'Newer' }}
+        </span>
+      </a>
+    {% endif %}
+    {% if paginationNextUrl %}
+      <a href="{{ paginationNextUrl }}">
+        <span>
+          {{ paginationNextText if paginationNextText else 'Older' }}
+        </span>
+      </a>
+    {% endif %}
+  </ul>
+{% endif %}

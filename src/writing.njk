@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Writing by Joshua Hartshorne
+description: Writing by Joshua Hartshorne, Front-end Developer
+pagination:
+  data: collections.post
+  size: 6
+  alias: posts
+---
+{% set postListItems = posts %}
+
+{% if postListItems.length < collections.post.length %}
+  {% set paginationNextUrl = pagination.nextPageHref %}
+  {% set paginationPrevUrl = pagination.previousPageHref %}
+{% endif %}
+
+<section class="py-24">
+    <div class="container">
+      <h1 class="font-avenir-roman text-3xl leading-normal max-w-lg md:text-4xl  lg:max-w-2xl lg:text-6xl lg:leading-tight">
+          <span class="c-underline c-underline--secondary">Writing by Josh...</span>
+      </h1>
+    </div>
+</section>
+
+<section class="pb-12 lg:pb-24">
+    <div class="container">
+        <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">All Articles<span class="text-pink">.</span></h2>
+
+        <div class="grid md:grid-cols-2 md:col-gap-12 lg:col-gap-24">
+            {% for item in pagination.items %}
+            <article class="mb-10">
+                <time class="text-sm mb-4 text-grey-light">{{ item.date.toDateString() }}</time>
+                <h3 class="text-xl md:text-2xl mb-4 | duration-200 hover:text-pink">
+                    <a href="{{ item.url | url }}" class="flex items-center | group">
+                        {{ item.data.title }}
+
+                        <svg class="w-4 h-4 ml-4 | duration-200 delay-100 group-hover:text-pink group-hover:ml-6 group-hover:text-pink" viewBox="0 0 19 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10H0V8.00001H14.5858L8.29289 1.70712L9.70711 0.292908L18.4142 9.00001L9.70711 17.7071L8.29289 16.2929L14.5858 10Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </h3>
+                <p class="font-avenir-light leading-normal">
+                    {{ item.data.excerpt }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% include "partials/pagination.njk" %}
+    </div>
+</section>
