@@ -51,6 +51,9 @@ module.exports = {
           strong: {
             color: '#ffffff',
           },
+          code: {
+            color: '#ffffff',
+          },
           a: {
             color: theme('colors.pink'),
             '&:hover': {
