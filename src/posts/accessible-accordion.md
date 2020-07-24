@@ -110,4 +110,4 @@ function toggleAccordionContent(event) {
 accordionButton.addEventListener('click', toggleAccordionContent);
 ```
 
-That's it! I hope you've found this tutorial useful. If you have, give it a like -- it's much appreciated.
+That's it! I hope you've found this tutorial useful. If you have, give it a share -- it's much appreciated.
