@@ -1,6 +1,6 @@
 ---
 title: Accessible accordions
-excerpt: An accordion is probably one of the most used components across the Web and provides a simple way of expanding and hiding content. It's often found on FAQ pages, or with content that's a little too unweiedly to be shown at all times.
+excerpt: An accordion is probably one of the most used components across the Web and provides a simple way of expanding and hiding content. It's often found on FAQ pages, or with content that's a little too unweiedly to be shown at all times. Let's take a look at how to create one!
 ---
 
 ## The Markup
@@ -21,14 +21,16 @@ There are two main parts to creating the HTML for an accordion component; the bu
 One of the fundamental things to note here -- and it may sound obvious -- is that we are using `<button>`. A `<button>` brings with it a few characteristics that other tags may not, for example:
 
 - It will have a default 'role' of button.
-- It will be focusable by default, and so is accessible to keyboard users
+- It will be focusable by default, and so is accessible to keyboard users.
 - A 'click' event can be triggered by clicking, hitting the 'Enter' key, or the 'Space' key.
 
 Another important thing to note here is the `aria-expanded` attribute. This attribute is used to indicate that there is expandable content, and its state (whether it is expanded or collapsed). The two values that this attribute can accept are `true` and `false`. We will update these values when we add our JavaScript into the mix!
 
+Finally, you may have noticed the custom [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) on the button. I'm using this so I can target the element from my JavaScript, however you could just as easily use a class and target it that way. I prefer to separate my concerns, and using data attributes maintains a nice divide between my style (classes) and my JavaScript (data attributes), however it's very much down to personal preference.
+
 ## The JavaScript
 
-An accordion is a relatively simple component, and in terms of functionality, requires only the ability to open, and close. To do this, we must first target our `<button>` and accordion content. We can do this using the `document.querySelector()` method.
+An accordion is a relatively simple component, and in terms of functionality, requires only the ability to open, and close. To do this, we must first target our `<button>` and accordion content. We can do this using the [`document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) method.
 
 ```js
 const accordionButton = document.querySelector('[data-js-hook="accordion-button"]');

@@ -52,7 +52,7 @@ module.exports = {
             color: '#ffffff',
           },
           code: {
-            color: '#ffffff',
+            color: theme('colors.pink'),
           },
           a: {
             color: theme('colors.pink'),
