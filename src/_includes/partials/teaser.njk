@@ -10,7 +10,7 @@
         </a>
     </h3>
     <p class="mb-6 font-avenir-light leading-normal">
-        {{ post.data.excerpt }}
+        {{ post.data.excerpt | truncate(200) }}
     </p>
 
     {% include "partials/tags.njk" %}
