@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+{% set taglist = collections[ tag ] %}
+
+<section class="py-24">
+    <div class="container">
+      <h1 class="font-avenir-roman text-3xl leading-normal max-w-lg md:text-4xl  lg:max-w-2xl lg:text-6xl lg:leading-tight">
+          <span class="c-underline c-underline--secondary">Posts tagged {{ tag }}</span>
+      </h1>
+    </div>
+</section>
+
+<section class="pb-12 lg:pb-24">
+    <div class="container">
+        <div class="grid md:grid-cols-2 md:col-gap-12 lg:col-gap-24">
+            {% for post in taglist %}
+              {% include "partials/teaser.njk" %}
+            {% endfor %}
+        </div>
+
+        {% include "partials/pagination.njk" %}
+    </div>
+</section>

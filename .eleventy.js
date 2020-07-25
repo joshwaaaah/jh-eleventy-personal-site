@@ -6,6 +6,11 @@ module.exports = function(eleventyConfig) {
   /* Pass through - stop eleventy touching */
   eleventyConfig.addPassthroughCopy('src/images')
 
+  /* Create a Posts collection */
+  eleventyConfig.addCollection("posts", function (collection) {
+    return collection.getFilteredByGlob("./src/posts/*.md").reverse();
+  });
+
   return {
     dir: { input: 'src', output: 'dist', data: '_data' },
     passthroughFileCopy: true,

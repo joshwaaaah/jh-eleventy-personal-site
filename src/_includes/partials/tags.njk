@@ -1,0 +1,12 @@
+<ul class="flex">
+  {% for tag in post.data.tags %}
+    <li class="mr-8">
+      <a href="/tags/{{ tag | url }}/" class="c-underline c-underline--primary">
+        <span class="sr-only">
+          Article is tagged under:
+        </span>
+        {{ tag }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
