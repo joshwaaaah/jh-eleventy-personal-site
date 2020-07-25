@@ -1,12 +1,13 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
 <header class="pt-6 border-t-4 border-pink border-solid md:pt-12">
   <div class="container | text-right">
     <nav class="inline-flex font-avenir-roman">
-      <a class="mr-6 md:mr-10 duration-200 | c-underline c-underline--primary " href="{{ '/' | url }}">
-        Home
+    {%- for entry in navPages %}
+      <a class="mr-6 md:mr-10 duration-200 {% if entry.url == page.url %} | c-underline c-underline--primary {% endif %}" href="{{ entry.url | url }}">
+        {{ entry.title }}
       </a>
-      <a class="mr-6 md:mr-10 duration-200" href="{{ '/writing/' | url }}">
-        Writing
-      </a>
+    {% endfor %}
     </nav>
   </div>
 </header>

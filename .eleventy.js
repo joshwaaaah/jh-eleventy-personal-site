@@ -1,8 +1,13 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  /* Add syntac highlighting for code */
+  /* Add syntax highlighting for code */
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  /* Add menu support */
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   /* Pass through - stop eleventy touching */
   eleventyConfig.addPassthroughCopy('src/images')
 
