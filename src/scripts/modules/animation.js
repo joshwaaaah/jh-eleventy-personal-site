@@ -38,14 +38,14 @@ homeAnimation.to(homepageTitle, {
   y: 0,
   opacity: 1,
   duration: 0.75,
-  ease: "power1.out"
+  ease: "back.out(1.2)"
 }, "-=0.5");
 
 homeAnimation.to(homepageUnderline, {
   width: '100%',
   opacity: 1,
   duration: 1,
-}, "-=0.75");
+}, "-=1");
 
 document.addEventListener("DOMContentLoaded", function(){
   gsap.set(homepageIntroduction, {y: -20});
