@@ -39,7 +39,7 @@ homeAnimation.to(homepageTitle, {
   opacity: 1,
   duration: 1,
   ease: "back.out(1.2)"
-}, "-=0.5");
+}, "-=0.75");
 
 homeAnimation.to(homepageUnderline, {
   width: '100%',
