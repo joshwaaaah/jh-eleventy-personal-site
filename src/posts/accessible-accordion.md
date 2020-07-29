@@ -21,7 +21,7 @@ There are two main parts to creating the HTML for an accordion component; the bu
 </div>
 ```
 
-One of the fundamental things to note here -- and it may sound obvious -- is that we are using `<button>`. A `<button>` brings with it a few characteristics that other tags may not, for example:
+One of the fundamental things to note here -- and it may sound obvious -- is that we are using a `<button>`. A `<button>` brings with it a few characteristics that other tags may not, for example:
 
 - It will have a default 'role' of button.
 - It will be focusable by default, and so is accessible to keyboard users.
