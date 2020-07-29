@@ -79,6 +79,9 @@ module.exports = {
       },
     },
     extend: {
+      zIndex: {
+        '-1': '-1',
+      },
       colors: {
         grey: '#111111',
         'grey-light': '#aeaeae',

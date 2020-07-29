@@ -3,10 +3,9 @@ layout: layouts/base.njk
 ---
 <section class="py-24">
   <div class="container | max-w-2xl lg:max-w-3xl mx-auto">
-    <time class="inline-block mb-2 md:mb-4">
-      <span class="c-underline c-underline--primary">
-        {{ page.date.toDateString() }}
-      </span>
+    <time class="relative inline-block mb-2 md:mb-4">
+      {{ page.date.toDateString() }}
+      <span class="c-underline c-underline--primary"></span>
     </time>
     <h1 class="font-avenir-roman text-3xl leading-normal max-w-lg mb-4 md:text-4xl lg:max-w-2xl lg:text-6xl lg:leading-tight">
     {{ title -}}
@@ -24,6 +23,5 @@ layout: layouts/base.njk
     <a class="font-avenir-roman py-3 px-6 inline-block text-black bg-green rounded" href="https://twitter.com/intent/tweet?text={{ title | urlencode}}&url={{ page.url | url }}">
       Share on Twitter
     </a>
-
   </div>
 </section>

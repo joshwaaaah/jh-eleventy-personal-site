@@ -4,8 +4,11 @@
   <div class="container | text-right">
     <nav class="inline-flex font-avenir-roman">
     {%- for entry in navPages %}
-      <a class="mr-6 md:mr-10 duration-200 {% if entry.url == page.url %} | c-underline c-underline--primary {% endif %}" href="{{ entry.url | url }}">
+      <a class="mr-6 md:mr-10 relative duration-200" href="{{ entry.url | url }}">
         {{ entry.title }}
+        {% if entry.url == page.url %}
+          <span class="c-underline c-underline--primary"></span>
+        {% endif %}
       </a>
     {% endfor %}
     </nav>
