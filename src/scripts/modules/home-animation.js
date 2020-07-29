@@ -38,8 +38,8 @@ homeAnimation.to(homepageTitle, {
   y: 0,
   opacity: 1,
   duration: 1,
-  ease: "back.out(1.2)"
-}, "-=0.75");
+  ease: "back.out(1.1)"
+}, "-=1");
 
 homeAnimation.to(homepageUnderline, {
   width: '100%',
