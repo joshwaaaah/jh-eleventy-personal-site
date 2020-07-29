@@ -30,14 +30,14 @@ const homepageIntroduction = document.querySelector('[data-js-hook="homepage-int
 homeAnimation.to(homepageIntroduction, {
   y: 0,
   opacity: 1,
-  duration: 1,
+  duration: 1.5,
   ease: "back.out(1.7)"
 });
 
 homeAnimation.to(homepageTitle, {
   y: 0,
   opacity: 1,
-  duration: 0.75,
+  duration: 1,
   ease: "back.out(1.2)"
 }, "-=0.5");
 
