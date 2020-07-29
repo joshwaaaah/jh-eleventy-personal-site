@@ -1,0 +1,16 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0.1;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 0.99;
+    transform: translateY(0%);
+  }
+}
+
+.fade-in-down {
+  @apply block;
+  animation: fadeInDown 1s;
+}
