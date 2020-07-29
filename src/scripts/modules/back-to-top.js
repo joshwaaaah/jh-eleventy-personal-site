@@ -43,7 +43,6 @@ function moveToTop(event) {
   supportsNativeSmoothScroll ? window.scrollTo(scrollOptions) : window.scrollTo(scrollOptions.left, scrollOptions.top);
 
   // Focus the first focusable element.
-  console.log(focusableElements[0])
   focusableElements[0].focus({
     preventScroll: true,
   })
