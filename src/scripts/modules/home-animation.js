@@ -29,6 +29,7 @@ const homepageIntroduction = document.querySelector('[data-js-hook="homepage-int
 
 homeAnimation.to(homepageIntroduction, {
   y: 0,
+  delay: 0.75,
   opacity: 1,
   duration: 1.5,
   ease: "back.out(1.7)"
