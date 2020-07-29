@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     typography: (theme) => ({
       default: {
-        css: {
+        css: [{
           color: '#ffffff',
           h1: {
             color: theme('colors.pink'),
@@ -42,8 +42,14 @@ module.exports = {
             fontWeight: 'normal',
             borderLeftColor: theme('colors.pink'),
           },
-          'ul > li::before': {
+          'ul > li:before': {
+            content: '',
             color: '#ffffff',
+            width: '1rem',
+            height: '1.5px',
+            backgroundColor: 'transparent',
+            borderRadius: '0',
+            backgroundImage: `linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, ${theme('colors.green')}, ${theme('colors.transparent')})`
           },
           'ol > li::before': {
             color: '#ffffff',
@@ -60,7 +66,7 @@ module.exports = {
               color: theme('colors.pink'),
             },
           },
-        },
+        }],
       },
     }),
     container: {
