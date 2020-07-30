@@ -27,30 +27,32 @@ const homepageUnderline = document.querySelector('[data-js-hook="homepage-title-
  */
 const homepageIntroduction = document.querySelector('[data-js-hook="homepage-introduction"]');
 
-homeAnimation.to(homepageIntroduction, {
-  y: 0,
-  delay: 0.5,
-  opacity: 1,
-  duration: 1.5,
-  ease: "back.out(1.7)"
-});
+if(homepageTitle !== null && homepageUnderline !== null && homepageIntroduction !== null) {
+  homeAnimation.to(homepageIntroduction, {
+    y: 0,
+    delay: 0.5,
+    opacity: 1,
+    duration: 1.5,
+    ease: "back.out(1.7)"
+  });
 
-homeAnimation.to(homepageTitle, {
-  y: 0,
-  opacity: 1,
-  duration: 1,
-  ease: "back.out(1.1)"
-}, "-=1");
+  homeAnimation.to(homepageTitle, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    ease: "back.out(1.1)"
+  }, "-=1");
 
-homeAnimation.to(homepageUnderline, {
-  width: '100%',
-  opacity: 1,
-  duration: 1,
-}, "-=1");
+  homeAnimation.to(homepageUnderline, {
+    width: '100%',
+    opacity: 1,
+    duration: 1,
+  }, "-=1");
 
-document.addEventListener("DOMContentLoaded", function(){
-  gsap.set(homepageIntroduction, {y: -20});
-  gsap.set(homepageTitle, {y: 50});
-  gsap.set(homepageUnderline, {width: 0});
-  homeAnimation.play();
-});
+  document.addEventListener("DOMContentLoaded", function(){
+    gsap.set(homepageIntroduction, {y: -20});
+    gsap.set(homepageTitle, {y: 50});
+    gsap.set(homepageUnderline, {width: 0});
+    homeAnimation.play();
+  });
+}

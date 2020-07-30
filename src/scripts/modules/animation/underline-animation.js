@@ -12,12 +12,14 @@ const underlineAnimation = gsap.timeline({paused: true});
  */
 const genericUnderline = document.querySelector('[data-js-hook="generic-underline"]');
 
-underlineAnimation.to(genericUnderline, {
-  opacity: 1,
-  duration: 1,
-});
+if(genericUnderline !== null) {
+  underlineAnimation.to(genericUnderline, {
+    opacity: 1,
+    duration: 1,
+  });
 
-document.addEventListener("DOMContentLoaded", function(){
-  gsap.set(genericUnderline, {opacity: 0});
-  underlineAnimation.play();
-});
+  document.addEventListener("DOMContentLoaded", function(){
+    gsap.set(genericUnderline, {opacity: 0});
+    underlineAnimation.play();
+  });
+}

@@ -48,4 +48,6 @@ function moveToTop(event) {
   })
 }
 
-backToTopButton.addEventListener('click', moveToTop);
+if(backToTopButton !== null) {
+  backToTopButton.addEventListener('click', moveToTop);
+}
