@@ -6,30 +6,7 @@ tags:
   - accessibility
 ---
 
-## Let's go!
-
-Back to top buttons are quite common, and useful, components used across the Web, but they're easy to get wrong if you're not thinking about accessibility.
-
-## A sprinkle of HTML
-
-The markup for our 'back to top' button consists of a couple of things, firstly, we're using an `<a>` tag for our button. Inside of that we have an icon, and some text.
-
-Often you'll see a 'back to top' button without text, and only an icon. This is an issue. To fix this, it's relatively simple: add some text! If you don't want the text to be visible then there are various ways to do this, however one approach I like to use is utilising a 'screen-reader' only class.
-
-```css
-position: absolute;
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-white-space: nowrap;
-border-width: 0;
-```
-This class is mega useful when building accessible sites. Essentially, it allows you to display content to screen readers, whilst hiding it visually. That way, you can keep both your designer happy, and the accessibility experts!
-
-There are other techniques that you can use to achieve similar results, a [great resource for hiding content visually is the WebAIM site.](https://webaim.org/techniques/css/invisiblecontent/)
+## The HTML
 
 ```html
 <a href="#top" data-js-hook="back-to-top-button">
@@ -39,12 +16,6 @@ There are other techniques that you can use to achieve similar results, a [great
 ```
 
 ## Now for some JavaScript
-
-The JavaScript code below is responsible for both scrolling the page to the top, but also, and often forgotten, it moves the `document.activeElement`, or focus.
-
-Moving focus is often a forgotten part of the 'back to top' button, however it is really important. For visual users, it's quite clear that the page has moved position, however for visually-impaired users, or people using assistive technology, it may not be.
-
-To resolve this, we're storing a list of all focusable elements on the page, and, upon scroll, we are resetting the focus back to the first focusable element.
 
 ```js
 /**
