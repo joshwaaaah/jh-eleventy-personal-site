@@ -18,7 +18,7 @@ const focusableElements = document.querySelectorAll('button, a, input, select, t
  * @type {Object}
  */
 const scrollOptions = {
-  top: 100,
+  top: 0,
   left: 0,
   behavior: 'smooth'
 };
