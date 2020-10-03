@@ -9,32 +9,32 @@ module.exports = {
           color: '#ffffff',
           h1: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           h2: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           h3: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           h4: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           h5: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           h6: {
             color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.avenir-roman')}`,
+            fontFamily: `${theme('fontFamily.base')}`,
             fontWeight: 'normal',
           },
           blockquote: {
