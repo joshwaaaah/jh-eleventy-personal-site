@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
 
   /* Pass through - stop eleventy touching */
   eleventyConfig.addPassthroughCopy('src/images')
+  eleventyConfig.addPassthroughCopy('src/_headers');
 
   /* Create a Posts collection */
   eleventyConfig.addCollection("posts", function (collection) {
