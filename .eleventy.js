@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./src/posts/*.md").reverse();
   });
 
-  // Minify HTML
+  /* Minify HTML */
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
