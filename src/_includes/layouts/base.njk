@@ -3,6 +3,14 @@
 <head>
   <link rel="preload" href="{{ '/fonts/DMSans-Regular.woff2' | url }}" as="font" crossorigin="anonymous">
 
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'DMSans';
+      src: url('{{ '/fonts/DMSans-Regular.woff2' | url }}') format('woff2');
+    }
+  </style>
+
   <meta charset="utf-8">
   <script>
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'has-js ';
@@ -17,14 +25,6 @@
   <meta name="theme-color" content="#F63D7D">
 
   <title>{{ renderData.title or title or metadata.title }}</title>
-
-  <style>
-    @font-face {
-      font-display: swap;
-      font-family: 'DMSans';
-      src: url('{{ '/fonts/DMSans-Regular.woff2' | url }}') format('woff2');
-    }
-  </style>
 
   <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
 </head>
