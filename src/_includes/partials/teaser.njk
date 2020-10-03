@@ -1,6 +1,6 @@
 <article class="mb-10">
     <time class="text-sm mb-4 text-grey-light">{{ post.date.toDateString() }}</time>
-    <h3 class="text-xl md:text-2xl mb-4 | duration-200 hover:text-pink">
+    <h3 class="text-xl md:text-2xl mb-4 2xl:text-2xl | duration-200 hover:text-pink">
         <a href="{{ post.url | url }}" class="flex items-center | group">
             {{ post.data.title }}
 
@@ -9,7 +9,7 @@
             </svg>
         </a>
     </h3>
-    <p class="mb-6 font-avenir-light leading-normal">
+    <p class="mb-6 font-avenir-light leading-normal 2xl:text-lg">
         {{ post.data.excerpt | truncate(200) }}
     </p>
 
