@@ -97,8 +97,8 @@ module.exports = {
         purple: '#BD10E0',
       },
       fontFamily: {
-        'avenir-roman': ['Avenir Roman', ...defaultTheme.fontFamily.sans],
-        'avenir-light': ['Avenir Light', ...defaultTheme.fontFamily.sans],
+        'heading': ['DM Sans', ...defaultTheme.fontFamily.sans],
+        'body': ['DM Sans', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: theme => ({
         focus: `0 0 0 2px ${theme('colors.pink')}`,

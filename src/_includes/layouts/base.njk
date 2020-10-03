@@ -1,22 +1,11 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <link rel="preload" href="{{ '/fonts/Avenir-Light.woff2' | url }}" as="font" crossorigin="anonymous">
-  <link rel="preload" href="{{ '/fonts/Avenir-Roman.woff2' | url }}" as="font" crossorigin="anonymous">
-
   <style>
     @font-face {
       font-display: swap;
-      font-family: 'Avenir Roman';
-      font-weight: 100 900;
-      src: url('{{ '/fonts/Avenir-Roman.woff2' | url }}') format('woff2');
-    }
-
-    @font-face {
-      font-display: swap;
-      font-family: 'Avenir Light';
-      font-weight: 100 900;
-      src: url('{{ '/fonts/Avenir-Light.woff2' | url }}') format('woff2');
+      font-family: 'DMSans';
+      src: url('{{ '/fonts/DMSans-Regular.woff2' | url }}') format('woff2');
     }
   </style>
 
@@ -38,7 +27,7 @@
   <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
 </head>
 
-<body class="bg-grey leading-normal font-avenir-light text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
+<body class="bg-grey leading-normal font-body text-white" id="top" itemscope itemtype="http://schema.org/WebPage">
   {% include "partials/header.njk" %}
 
   <main>
