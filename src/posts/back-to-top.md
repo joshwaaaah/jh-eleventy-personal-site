@@ -1,5 +1,5 @@
 ---
-title: Creating a accessible 'back to top' button
+title: Creating an accessible 'back to top' button
 excerpt: Today I want to write a quick snippet which will hopefully help someone, anyone, create a nice 'n easy 'Back to top' button. Let's dive in!
 tags:
   - snippet
