@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+  <link rel="preload" href="{{ '/fonts/Avenir-Light.woff2' | url }}" as="font" crossorigin="anonymous">
+  <link rel="preload" href="{{ '/fonts/Avenir-Roman.woff2' | url }}" as="font" crossorigin="anonymous">
+
   <meta charset="utf-8">
   <script>
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'has-js ';
@@ -13,9 +16,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicons/favicon-32x32.png' | url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicons/favicon-16x16.png' | url }}">
   <meta name="theme-color" content="#F63D7D">
-
-  <link rel="preload" href="{{ '/fonts/Avenir-Light.woff2' | url }}" as="font" crossorigin="anonymous">
-  <link rel="preload" href="{{ '/fonts/Avenir-Roman.woff2' | url }}" as="font" crossorigin="anonymous">
 
   <title>{{ renderData.title or title or metadata.title }}</title>
 
