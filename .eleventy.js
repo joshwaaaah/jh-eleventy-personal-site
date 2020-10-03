@@ -16,6 +16,20 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./src/posts/*.md").reverse();
   });
 
+  // Minify HTML
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
+
   return {
     dir: { input: 'src', output: 'dist', data: '_data' },
     passthroughFileCopy: true,
