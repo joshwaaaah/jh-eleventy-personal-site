@@ -1,19 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  {# <link rel="preload" href="{{ '/fonts/DMSans-Regular.woff2' | url }}" as="font" crossorigin="anonymous"> #}
-
-  {# <style>
-    body {
-      background: #111111;
-    }
-
-    @font-face {
-      font-display: swap;
-      font-family: 'DMSans';
-      src: url('{{ '/fonts/DMSans-Regular.woff2' | url }}') format('woff2');
-    }
-  </style> #}
+  <link rel="preload" href="{{ '/fonts/DMSans-Regular.woff2' | url }}" as="font" crossorigin="anonymous">
 
   <meta charset="utf-8">
   <script>
@@ -29,6 +17,14 @@
   <meta name="theme-color" content="#F63D7D">
 
   <title>{{ renderData.title or title or metadata.title }}</title>
+
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'DMSans';
+      src: url('{{ '/fonts/DMSans-Regular.woff2' | url }}') format('woff2');
+    }
+  </style>
 
   <link rel="stylesheet" href="{{ '/styles/index.css' | url }}">
 </head>
