@@ -86,6 +86,9 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        '6xl': '3.75rem',
+      },
       zIndex: {
         '-1': '-1',
       },
@@ -97,8 +100,7 @@ module.exports = {
         purple: '#BD10E0',
       },
       fontFamily: {
-        'heading': ['DM Sans', ...defaultTheme.fontFamily.sans],
-        'body': ['DM Sans', ...defaultTheme.fontFamily.sans],
+        'base': ['DMSans', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: theme => ({
         focus: `0 0 0 2px ${theme('colors.pink')}`,
