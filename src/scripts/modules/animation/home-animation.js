@@ -43,16 +43,9 @@ if(homepageTitle !== null && homepageUnderline !== null && homepageIntroduction 
     ease: "back.out(1.1)"
   }, "-=1");
 
-  homeAnimation.to(homepageUnderline, {
-    width: '100%',
-    opacity: 1,
-    duration: 1,
-  }, "-=1");
-
   document.addEventListener("DOMContentLoaded", function(){
     gsap.set(homepageIntroduction, {y: -20});
     gsap.set(homepageTitle, {y: 50});
-    gsap.set(homepageUnderline, {width: 0});
     homeAnimation.play();
   });
 }
