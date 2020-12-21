@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: false
       });
       return minified;
