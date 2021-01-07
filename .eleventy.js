@@ -1,7 +1,6 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-
 module.exports = function(eleventyConfig) {
   /* Add syntax highlighting for code */
   eleventyConfig.addPlugin(syntaxHighlight);
