@@ -27,6 +27,8 @@ Anonymous functions have their uses, and the above snippet is perfectly reasonab
 
 This may not be an issue in this scenario, but often for performance we'll want to remove an event listener when it's no longer required. So, why can't we remove it? Well, in order to remove an event listener, the `document.removeEventListener('click', functionName)` method requires a reference to the original function, and when we're passing in an anonymous function, we don't have one.
 
+Another benefit is reusability. We now have a function that we can re-use in multiple places, be it a `click`, `load`, or simply whenever we would like. It's much more flexible!
+
 ## So, how do we fix this?
 
 Luckily for us, this is relatively simple to fix -- simply use a `function` declaration, for example:
