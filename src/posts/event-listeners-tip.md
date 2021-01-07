@@ -19,7 +19,7 @@ document.addEventListener('click', function(){
 })
 ```
 
-This is great because it allows us to run our own code whenever an event is triggered. As you can see from the above snippet, we are using an anonymous function (a function without a name) as our callback, however, what I'm going to suggest in this tip, is to instead use a named function.
+This is great because it allows us to run our own code whenever an event is triggered. As you can see from the above snippet, we are using an anonymous function (a function without a name) as our callback, however, what I'm going to suggest in this tip, is **to instead use a named function**.
 
 ## Why named functions?
 
