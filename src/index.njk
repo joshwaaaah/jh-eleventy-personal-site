@@ -26,7 +26,7 @@ eleventyNavigation:
     <div class="container">
         <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">Latest Articles<span class="text-pink">.</span></h2>
 
-        <div class="grid md:grid-cols-2 md:gap-12 lg:gap-24">
+        <div class="grid md:grid-cols-2 md:gap-12 lg:gap-16 xl:gap-24">
             {% for post in collections.posts.slice(0, 2) %}
               {% include "partials/teaser.njk" %}
             {% endfor %}
@@ -38,7 +38,7 @@ eleventyNavigation:
   <div class="container">
     <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">Latest Projects<span class="text-green">.</span></h2>
 
-    <div class="grid md:grid-cols-2 md:gap-12 lg:gap-24">
+    <div class="grid md:grid-cols-2 md:gap-12 lg:gap-16 xl:gap-24">
       {% for project in collections.projects.slice(0, 2) %}
         {% include "partials/project-teaser.njk" %}
       {% endfor %}
