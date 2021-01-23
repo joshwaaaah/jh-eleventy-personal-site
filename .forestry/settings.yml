@@ -6,8 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: src/_data/siteData.json
-  label: Global Settings
-  match: "**/*"
+  label: Site Settings
 - type: directory
   path: src/posts
   label: Posts
