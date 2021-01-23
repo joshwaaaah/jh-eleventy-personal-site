@@ -4,11 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: src/_data
+- type: document
+  path: src/_data/siteData.json
   label: Global Settings
-  create: none
-  match: siteData.json
+  match: "**/*"
 - type: directory
   path: src/posts
   label: Posts
