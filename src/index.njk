@@ -33,3 +33,15 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
+<section class="pb-12 lg:pb-24">
+  <div class="container">
+    <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">Latest Projects<span class="text-green">.</span></h2>
+
+    <div class="grid md:grid-cols-2 md:gap-12 lg:gap-24">
+      {% for project in collections.projects.slice(0, 2) %}
+        {% include "partials/project-teaser.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

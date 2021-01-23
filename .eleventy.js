@@ -17,6 +17,11 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./src/posts/*.md").reverse();
   });
 
+  /* Create a Projects collection */
+  eleventyConfig.addCollection("projects", function (collection) {
+    return collection.getFilteredByGlob("./src/projects/*.md").reverse();
+  });
+
   return {
     dir: { input: 'src', output: 'dist', data: '_data' },
     passthroughFileCopy: true,

@@ -97,6 +97,7 @@ module.exports = {
         'grey-light': '#aeaeae',
         pink: '#F63D7D',
         green: '#50E3C2',
+        'green-dark': '#19a082',
         purple: '#BD10E0',
       },
       fontFamily: {
