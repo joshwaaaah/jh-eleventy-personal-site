@@ -1,6 +1,7 @@
 ---
 title: Accessible accordions
 excerpt: An accordion is probably one of the most used components across the Web and provides a simple way of expanding and hiding content. It's often found on FAQ pages, or with content that's a little too unweiedly to be shown at all times. Let's take a look at how to create one!
+date: 2021-01-03
 tags:
   - tutorial
   - snippet

@@ -1,6 +1,7 @@
 ---
 title: Event Listeners & Anonymous Functions
 excerpt: As developers we probably work with event listeners most days. In this little article, I want to give you a quick tip for the next time you write one.
+date: 2021-01-01
 tags:
   - tip
   - snippet
