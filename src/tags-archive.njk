@@ -24,7 +24,7 @@ permalink: /tags/{{ tag }}/
 
 <section class="pb-12 lg:pb-24">
     <div class="container">
-        <div class="grid md:grid-cols-2 md:col-gap-12 lg:col-gap-24">
+        <div class="grid md:grid-cols-2 md:gap-x-12 lg:gap-x-24">
             {% for post in taglist %}
               {% include "partials/teaser.njk" %}
             {% endfor %}

@@ -79,7 +79,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        default: '2rem',
+        DEFAULT: '2rem',
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
@@ -112,7 +112,6 @@ module.exports = {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
     margin: ['responsive', 'group-hover', 'focus'],
     textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-
   },
   plugins: [
     require('@tailwindcss/typography'),

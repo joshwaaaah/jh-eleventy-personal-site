@@ -30,7 +30,7 @@ eleventyNavigation:
     <div class="container">
         <h2 class="text-2xl mb-4 md:text-3xl lg:mb-10 lg:text-4xl">All Articles<span class="text-pink">.</span></h2>
 
-        <div class="grid md:grid-cols-2 md:col-gap-12 lg:col-gap-24">
+        <div class="grid md:grid-cols-2 md:gap-x-12 lg:gap-x-24">
             {% for post in pagination.items %}
               {% include "partials/teaser.njk" %}
             {% endfor %}
