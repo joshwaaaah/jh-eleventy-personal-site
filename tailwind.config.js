@@ -3,72 +3,18 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: ['./src/**/*.njk', './src/**/*.md'],
   theme: {
-    typography: (theme) => ({
-      default: {
-        css: [{
-          color: '#ffffff',
-          h1: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          h2: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          h3: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          h4: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          h5: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          h6: {
-            color: theme('colors.pink'),
-            fontFamily: `${theme('fontFamily.base')}`,
-            fontWeight: 'normal',
-          },
-          blockquote: {
-            color: '#ffffff',
-            fontWeight: 'normal',
-            borderLeftColor: theme('colors.pink'),
-          },
-          'ul > li:before': {
-            content: '',
-            color: '#ffffff',
-            width: '1rem',
-            height: '1.5px',
-            backgroundColor: 'transparent',
-            borderRadius: '0',
-            backgroundImage: `linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, ${theme('colors.green')}, ${theme('colors.transparent')})`
-          },
-          'ol > li::before': {
-            color: '#ffffff',
-          },
-          strong: {
-            color: '#ffffff',
-          },
-          code: {
-            color: theme('colors.pink'),
-          },
-          a: {
-            color: theme('colors.pink'),
-            '&:hover': {
-              color: theme('colors.pink'),
-            },
-          },
-        }],
-      },
-    }),
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+    },
     screens: {
       'sm': '640px',
       'md': '768px',
@@ -86,6 +32,76 @@ module.exports = {
       },
     },
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: [{
+            color: '#ffffff',
+            h1: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            h2: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            h3: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            h4: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            h5: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            h6: {
+              color: theme('colors.pink'),
+              fontFamily: `${theme('fontFamily.base')}`,
+              fontWeight: 'normal',
+            },
+            blockquote: {
+              color: '#ffffff',
+              fontWeight: 'normal',
+              borderLeftColor: theme('colors.pink'),
+            },
+            'ul > li:before': {
+              content: '',
+              color: '#ffffff',
+              width: '1rem',
+              height: '1.5px',
+              backgroundColor: 'transparent',
+              borderRadius: '0',
+              backgroundImage: `linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, ${theme('colors.green')}, ${theme('colors.transparent')})`
+            },
+            'ol > li::before': {
+              color: '#ffffff',
+            },
+            strong: {
+              color: '#ffffff',
+            },
+            code: {
+              color: theme('colors.pink'),
+            },
+            a: {
+              color: theme('colors.pink'),
+
+              '&:hover': {
+                color: theme('colors.pink'),
+              },
+            },
+            'a code': {
+              color: theme('colors.pink'),
+            },
+          }],
+        },
+      }),
       fontSize: {
         '6xl': '3.75rem',
       },
