@@ -4,10 +4,12 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: textarea
   name: excerpt
-  label: excerpt
+  label: Excerpt
 - type: text
   name: link
-  label: link
+  label: Link to project
+  config:
+    required: true
