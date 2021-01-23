@@ -5,6 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: src/_data
+  label: Global Settings
+  create: none
+  match: siteData.json
+- type: directory
   path: src/posts
   label: Posts
   create: documents
