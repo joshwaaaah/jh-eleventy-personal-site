@@ -13,3 +13,5 @@ fields:
   label: Link to project
   config:
     required: true
+pages:
+- src/projects/here-is-a-test.md
