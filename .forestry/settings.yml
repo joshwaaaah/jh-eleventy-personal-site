@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: src/_data/siteData.json
+  label: Site Settings
 - type: directory
   path: src/posts
   label: Posts
