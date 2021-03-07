@@ -15,6 +15,9 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'has-js ';
   </script>
+
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ renderData.description or description or metadata.description }}">
   <meta name="generator" content="Eleventy">
@@ -51,14 +54,6 @@
   </main>
 
   {% include "partials/footer.njk" %}
-
-  <script src="{{ '/scripts/index.js' | url }}"></script>
-
-  <script src="https://getinsights.io/js/insights.js"></script>
-  <script>
-  insights.init('vq7XlgJ81CynxLw9');
-  insights.trackPages();
-  </script>
 </body>
 
 </html>
