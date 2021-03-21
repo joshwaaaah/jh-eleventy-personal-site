@@ -1,6 +1,10 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
+const livePosts = function(post) {
+  return post.data.draft === false;
+}
+
 module.exports = function(eleventyConfig) {
   /* Add syntax highlighting for code */
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -14,7 +18,9 @@ module.exports = function(eleventyConfig) {
 
   /* Create a Posts collection */
   eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getFilteredByGlob("./src/posts/*.md").reverse();
+    return collection.getFilteredByGlob("./src/posts/*.md")
+    .filter(livePosts)
+    .reverse();
   });
 
   /* Create a Projects collection */
