@@ -17,3 +17,9 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-green;
 }
+
+/* Firefox */
+* {
+  scrollbar-color: theme('colors.pink') theme('colors.grey-lighter');
+  scrollbar-width: thin;
+}
