@@ -54,7 +54,7 @@
     "acorn": "^6.4.1",
     "gsap": "^3.4.2",
     "node-sass": "^4.14.1",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "postcss-copy-assets": "^0.3.1"
   }
 }
