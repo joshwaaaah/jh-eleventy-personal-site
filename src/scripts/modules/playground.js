@@ -19,13 +19,18 @@ const globeDOM = document.querySelector('[data-js-globe]')
 const myGlobe = Globe({});
 myGlobe(globeDOM);
 
+window.addEventListener('resize', (event) => {
+  myGlobe.width([globeDOM.parentElement.offsetWidth])
+  myGlobe.height([globeDOM.parentElement.offsetHeight])
+});
+
 myGlobe.controls().autoRotate = true;
 myGlobe.controls().autoRotateSpeed = 0.35;
 
 myGlobe.backgroundColor('#111111')
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-        .width('500')
-        .height('500')
+        .width(globeDOM.parentElement.offsetWidth)
+        .height(globeDOM.parentElement.offsetHeight)
         .pointOfView({lat:0,long:0, altitude: 2}, 500)
 
         let tl = gsap.timeline({
@@ -66,6 +71,8 @@ myGlobe.backgroundColor('#111111')
           }
         })
 
+        tl.addLabel("start2")
+
         tl.to('[data-js-section-2]', {
           display: 'none',
           opacity: 0,
@@ -91,3 +98,4 @@ myGlobe.backgroundColor('#111111')
             .pointOfView({lat:-33.64987,long:-154.66801, altitude: 2}, 500)
           }
         })
+        tl.addLabel("start3")
