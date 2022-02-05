@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: A playground for JS
+---
+
+<section class="pb-28" data-js-section>
+  <div class="container">
+    <div>
+      <div class="max-w-xl mx-auto overflow-hidden">
+        <div class="pointer-events-none" data-js-globe></div>
+
+        <div data-js-section-1>
+          <h1 class="relative inline-block mb-4 text-3xl leading-normal max-w-lg md:text-4xl lg:max-w-2xl lg:text-5xl lg:leading-tight">
+            A brave new world
+            <span class="c-underline c-underline--primary"></span>
+          </h1>
+          <p class="leading-normal xl:text-lg xl:leading-relaxed">We live in an inperfect world. A world with war, tradgedy, but also love. Let's focus on the positives.</p>
+          <a class="mr-6 mt-4 inline-block md:mr-10 relative duration-200 hover:text-pink" href="{{ entry.url | url }}">
+            Find out more
+            <span class="c-underline c-underline--primary"></span>
+          </a>
+        </div>
+
+        <div class="hidden" data-js-section-2>
+          <h1 class="relative inline-block mb-4 text-3xl leading-normal max-w-lg md:text-4xl lg:max-w-2xl lg:text-5xl lg:leading-tight">
+            Did you know...
+            <span class="c-underline c-underline--secondary"></span>
+          </h1>
+          <p class="leading-normal xl:text-lg xl:leading-relaxed">Over 500 people a day eat sandwiches at the beach? No, neither did I. It's probably not true.</p>
+          <a class="mr-6 mt-4 inline-block md:mr-10 relative duration-200 hover:text-pink" href="{{ entry.url | url }}">
+            Find out more
+            <span class="c-underline c-underline--primary"></span>
+          </a>
+        </div>
+
+        <div class="hidden" data-js-section-3>
+          <h1 class="relative inline-block mb-4 text-3xl leading-normal max-w-lg md:text-4xl lg:max-w-2xl lg:text-5xl lg:leading-tight">
+            Finally...
+            <span class="c-underline c-underline--primary"></span>
+          </h1>
+          <p class="leading-normal xl:text-lg xl:leading-relaxed">Let's look after the earth. After all, we only have one.</p>
+          <a class="mr-6 mt-4 inline-block md:mr-10 relative duration-200 hover:text-pink" href="{{ entry.url | url }}">
+            Find out more
+            <span class="c-underline c-underline--primary"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-pink py-24">
+  <div class="container text-center">
+    <h2 class="text-6xl font-bold">Want to know more?</h2>
+  </div>
+</section>
